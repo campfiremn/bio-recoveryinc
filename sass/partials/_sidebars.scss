@@ -1,0 +1,69 @@
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	font-size: 14px;
+	font-size: 1.4rem;
+
+	.widget {
+		margin-bottom:40px;
+	}
+
+	.widget-title {
+
+		padding:15px 0;
+		color:$gray * .4;
+		text-align:center;
+		margin:0;
+	}
+
+	a {
+		color:$gray * .4;
+		font-weight:bold;
+	}
+
+	a:hover {
+		color:$gray * .8;
+	}  
+
+	p:last-child,
+	ul > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.widget_nav_menu li {
+		background:#fff;
+	}
+}
+
+
+
+/* ## WooCommerce
+--------------------------------------------- */
+.sidebar {
+
+	.widget_shopping_cart {
+
+		.widget-title {
+			background:$color-highlight-compliment;
+			color:#fff;
+		}
+
+		ul {
+			border-color:$color-highlight-compliment;
+		}
+	}
+}
+
+/*  ## Simple Image
+---------------------------------------------- */
+.sidebar {
+	p.simple-image img {
+		width:300px;
+		display:block;
+		margin:0 auto;
+	}
+}
+
+
+

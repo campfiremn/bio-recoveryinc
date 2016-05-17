@@ -1,0 +1,53 @@
+/* # Bio-Recovery
+Theme Name: Bio-Recovery
+Theme URI: http://my.studiopress.com/themes/genesis/
+Description: This is the theme created for the Bio-Recovery Inc.
+Author: StudioPress
+Author URI: http://www.campfiremn.com/
+Template: genesis
+Template Version: 2.2.2
+Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* # Table of Contents
+- HTML5 Reset
+- Defaults
+- Skip Links
+- Structure and Layout
+- Common Classes
+- Widgets
+- Plugins
+- Site Header
+- Site Navigation
+- Content Area
+- Sidebars
+- Footer Widgets
+- Site Footer
+- WooCommerce
+- Media Queries
+*/
+
+@import "partials/_variables.scss";
+@import "partials/_colors.scss";
+@import "partials/_mixins.scss";
+@import "partials/_base.scss";
+
+@import "partials/_reset.scss";
+@import "partials/_defaults.scss";
+@import "partials/_skip-links.scss";
+
+@import "partials/_structure-layout.scss";
+@import "partials/_common-classes.scss";
+@import "partials/_widgets.scss";
+@import "partials/_plugins.scss";
+@import "partials/_site-header.scss";
+@import "partials/_site-navigation.scss";
+@import "partials/_content-area.scss";
+@import "partials/_sidebars.scss";
+@import "partials/_footer-widgets.scss";
+@import "partials/_site-footer.scss";
+@import "partials/_woocommerce.scss";
+@import "partials/_ninja-forms.scss";
+@import "partials/_media-queries.scss";

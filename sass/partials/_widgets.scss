@@ -1,0 +1,221 @@
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+	word-wrap: break-word;
+}
+
+.widget ol > li {
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+.widget li li {
+	border: 0;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* ## Featured Content
+--------------------------------------------- */
+
+.featured-content .entry {
+	border-bottom: 2px solid #f5f5f5;
+	margin-bottom: 20px;
+	padding: 0 0 24px;
+}
+
+.footer-widgets .entry {
+	border-bottom: 1px dotted #666;
+}
+
+.featured-content .entry-title {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+/* ## Utility Bar
+--------------------------------------------- */
+
+/* Utility Bar
+--------------------------------------------- */
+
+.utility-bar {
+	background-color: $color-secondary;
+	color: #fff;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight:bold;
+	padding: 5px 0;
+	border-bottom:2px solid;
+	border-color:$color-secondary * .85;
+
+	li {
+		padding:0 10px;
+	}
+}
+
+.utility-bar a {
+	color:#fff;
+}
+
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+.utility-bar a:hover {
+	@include transition(all .2s ease-in-out); 
+	color:$color-secondary * .75;
+}
+
+.utility-bar-left,
+.utility-bar-right {
+	width: 50%;
+}
+
+.utility-bar-left p,
+.utility-bar-right p {
+	margin-bottom: 0;
+	padding:0;
+}
+
+.utility-bar-left {
+	float: left;
+}
+
+.utility-bar-right {
+	float: right;
+	text-align: right;
+}
+
+.utility-bar ul li {
+	display:inline-block;
+}
+
+.utility-bar-left ul li {
+	vertical-align:bottom;
+	height:17px;
+}
+
+.utility-bar span.amount {
+	color:#fff;
+}
+
+
+
+/* ## Home CTA
+--------------------------------------------- */
+.home-cta {
+	padding:40px;
+	text-align:center;
+	background:$gray;
+	border-bottom:1px solid;
+	border-color:$border-color;
+}
+
+.img-fade {
+	opacity:1;
+	cursor:pointer;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;	
+}
+
+.img-fade:hover {
+	opacity:.75;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+
+/* ## Sidebar CTA
+--------------------------------------------- */
+
+.sidebar-cta {
+	text-align:center;
+	color:#fff;
+	-webkit-transition: all 0.2s ease-in-out;
+  	-moz-transition: all 0.2s ease-in-out;
+  	-ms-transition: all 0.2s ease-in-out;
+  	-o-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
+
+	h3.widgettitle.widget-title{
+    	background: $color-secondary * .9;
+    	color:#fff;
+    }
+
+    .sidebar-cta-1 {
+    	background: $color-secondary;
+    	padding: 25px;
+
+	    h3 {
+	    	color:#fff;
+	    }
+	}
+	.sidebar-cta-1:hover {
+		background-color:$color-secondary * 1.05;
+	}
+
+	.sidebar-cta-2 {
+		background: $color-highlight-compliment;
+		padding:25px;
+
+		h3 {
+			color:#fff;
+		}
+	}
+}
+
+/* ## Owl Carousel
+--------------------------------------------- */
+
+.sidebar .wcps-container {
+	border:6px solid;
+	border-color:$gray * .95;
+
+	.owl-controls .owl-pagination{
+		display:none;
+	}
+}
+
+/* ## Single Product Free Shipping CTA
+--------------------------------------------- */
+.summary .cta-free-shipping {
+	background-color:$color-yellow;
+	color:$gray * .4;
+	padding:25px;
+	font-weight:bold;
+	margin-top:25px;
+
+	p {
+		margin:0;
+		font-size:24px;
+	}
+}
+
+/* ## Tag Cloud
+--------------------------------------------- */
+
+
+
+

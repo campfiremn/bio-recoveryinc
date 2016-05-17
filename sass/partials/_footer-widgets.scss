@@ -1,0 +1,67 @@
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: $gray;
+	clear: both;
+	padding-top: 40px;
+
+	.widget {
+		margin-bottom: 40px;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+	a {
+		color: $gray * .45;
+		font-size:14px;
+		font-size:1.4rem;
+		font-weight:bold;
+	}
+	a:hover,
+	a:focus,
+	a:active {
+		color:$gray * .75;
+	}
+	.widget-title {
+		color:$gray * .75;
+	}
+	li {
+		margin-bottom:5px;
+	}
+	input {
+		border: 1px solid #333;
+	}
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		width: 340px;
+	}
+	.footer-widgets-1 {
+		margin-right: 60px;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2 {
+		float: left;
+	}
+
+	.footer-widgets-3 {
+		float: right;
+	}
+	.woocommerce-product-search {
+		input[type="submit"] {
+			padding:10px 0;
+			background-color:$gray * .55;
+		}
+		input[type="submit"]:hover {
+			background-color:$gray * .75;
+			color:#fff;
+		}
+	}
+	#woocommerce-product-search-field {
+		color:$gray * .75;
+		font-weight:bold;
+	}
+}
+
