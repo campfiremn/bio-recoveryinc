@@ -47,7 +47,6 @@
 	.footer-widgets {
 		.footer-widgets-1,
 		.footer-widgets-2,
-		.footer-widgets-3,
 		.sidebar-primary, {
 			width: 300px;
 		}
@@ -57,7 +56,7 @@
 		}
 
 		.footer-widgets-3 {
-			float:none;
+			width:100%;
 		}	
 	}
 

@@ -130,7 +130,7 @@
 	input.button.alt,
 	.cart .button, 
 	.cart input.button {
-		background-color:$color-highlight;
+		background-color:$button-shop;
 		color:#fff;
 	}
 	#respond input#submit.alt:hover, 
@@ -139,7 +139,7 @@
 	input.button.alt:hover,
 	.cart .button:hover, 
 	.cart input.button:hover {
-		background-color:$color-highlight * .9;
+		background-color:$button-shop-hover;
 		color:#fff;
 	}
 }
@@ -147,7 +147,7 @@
 .woocommerce {
 	a.button {
 		font-size:12px;
-		font-weight:700;
+		font-weight:$bold;
 		color: #fff;
 		background-color: $color-highlight;
 		width:auto;
@@ -182,7 +182,7 @@
 }
 
 .woocommerce button.button.alt {
-	height:56px;
+	height:60px;
 	border-radius:3px;
     -webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -196,11 +196,11 @@
 .woocommerce {
 	a.added_to_cart {
 		font-weight:bold;
-		color:$gray * .4;
+		color:$success;
 		padding:5px 10px;
 	}
 	a.added_to_cart:hover {
-		color:$gray * .85;
+		color:$gray-med;
 	}	
 }
 

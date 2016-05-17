@@ -2,15 +2,14 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: $color-gray-darkest;
+	background-color: $gray-dark;
 	font-size: 14px;
 	font-size: 1.4rem;
-	font-weight:bold;
+	font-weight:$bold;
 	line-height: 1;
 	padding: 20px 0;
 	text-align: center;
 	color:$gray;
-	border-bottom: 5px solid $gray * .4;
 }
 
 .site-footer p {

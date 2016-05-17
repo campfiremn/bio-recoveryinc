@@ -39,7 +39,7 @@
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
-	color: $color-gray-darkest;
+	color: $gray-dark;
 }
 
 .header-image .site-title > a {
@@ -52,7 +52,7 @@
 .site-description {
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 300;
+	font-weight: $light;
 	line-height: 1.5;
 }
 
@@ -74,6 +74,7 @@
 	float: right;
 	text-align: right;
 	background:$gray;
-	border:1px solid $gray * .97;
+	border:$border-thin;
+	border-color:$border-color;
 	@include border-radius(2px);
 }

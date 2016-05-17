@@ -13,7 +13,7 @@
 		margin-bottom: 0;
 	}
 	a {
-		color: $gray * .45;
+		color: $gray-med-dark;
 		font-size:14px;
 		font-size:1.4rem;
 		font-weight:bold;
@@ -21,16 +21,17 @@
 	a:hover,
 	a:focus,
 	a:active {
-		color:$gray * .75;
+		color:$gray-med;
 	}
 	.widget-title {
-		color:$gray * .75;
+		color:$gray-med;
 	}
 	li {
 		margin-bottom:5px;
 	}
 	input {
-		border: 1px solid #333;
+		border: $border-thin;
+		border-color: $border-color;
 	}
 	.footer-widgets-1,
 	.footer-widgets-2,
@@ -52,16 +53,18 @@
 	.woocommerce-product-search {
 		input[type="submit"] {
 			padding:10px 0;
-			background-color:$gray * .55;
+			background-color:$gray-med-dark;
+			border-top-left-radius:0;
+			border-bottom-left-radius:0;
 		}
 		input[type="submit"]:hover {
-			background-color:$gray * .75;
+			background-color:$gray-med;
 			color:#fff;
 		}
 	}
 	#woocommerce-product-search-field {
-		color:$gray * .75;
-		font-weight:bold;
+		color:$gray-med;
+		font-weight: $bold;
 	}
 }
 

@@ -10,16 +10,16 @@ html {
 
 /* Chrome fix */
 body > div {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 body {
 	background-color: #fff;
-	color: $color-gray-darkest;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	color: $base-font-color;
+	font-family: $base-font-family;
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 400;
+	font-weight: $regular;
 	line-height: 1.6875;
 	-webkit-font-smoothing:antialiased;
 	margin: 0;
@@ -43,14 +43,14 @@ select.orderby {
 }
 
 a {
-	color: $color-primary;
+	color: $link-color;
 	text-decoration:none;
 
 }
 
 a:hover,
 a:focus {
-	color:$color-primary * 1.75;
+	color:$link-color-hover;
 }
 
 p {
@@ -93,14 +93,15 @@ li {
 hr {
 	border: 0;
 	border-collapse: collapse;
-	border-top: 1px solid #ddd;
+	border-top: $border-thin;
+	border-color: $border-color;
 	clear: both;
 	margin: 1em 0;
 }
 
 b,
 strong {
-	font-weight: 700;
+	font-weight: $bold;
 }
 
 blockquote,
@@ -135,9 +136,9 @@ h3,
 h4,
 h5,
 h6 {
-	color: $color-gray-darkest;
-	font-family: 'Helvetica Neue', Verdana, Arial, Helvetica, sans-serif;
-	font-weight: bold;
+	color: $heading-font-color;
+	font-family: $heading-font-family;
+	font-weight: $bold;
 	line-height: 1.2;
 	margin: 0 0 10px;
 }
@@ -241,14 +242,16 @@ img {
 }
 
 .gallery img {
-	border: 1px solid #ddd;
+	border: $border-thin;
+	border-color:$border-color;
 	height: auto;
 	padding: 4px;
 }
 
 .gallery img:hover,
 .gallery img:focus {
-	border: 1px solid $border-color;
+	border-top: $border-thin;
+	border-color: $border-color;
 }
 
 /* ## Forms
@@ -258,20 +261,20 @@ input,
 select,
 textarea {
 	background-color: #fff;
-	border: 1px solid;
-	border-color:$color-gray;
-	border-color:$gray * .8;
-	color: $gray *.4;
+	border: $border-med;
+	border-color: $border-color;
+	color: $gray-med-dark;
 	font-size: 18px;
 	font-size: 1.8rem;
-	font-weight:bold;
+	font-weight:$bold;
 	padding: 16px;
 	width: 100%;
 }
 
 input:focus,
 textarea:focus {
-	border: 1px solid #999;
+	border-top: $border-med;
+	border-color: $border-color-focus;
 	outline: none;
 }
 
@@ -282,14 +285,14 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-	color: $color-gray * 1.1;
-	font-weight: bold;
+	color: $gray-med;
+	font-weight: $bold;
 	opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-	color: $color-gray * 1.1;
-	font-weight:bold;
+	color: $gray-med;
+	font-weight: $bold;
 }
 
 button,
@@ -297,16 +300,17 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	background-color: #333;
+	background-color: $button-bkgd;
 	border: 0;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 300;
+	font-weight: $bold;
 	padding: 16px 24px;
-	/*text-transform: uppercase;*/
+
 	width: auto;
+	@include border-radius(3px);
 }
 
 button:hover,
@@ -319,7 +323,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: #c3251d;
+	background-color: $button-bkgd-hover;
 	color: #fff;
 }
 
@@ -333,7 +337,7 @@ input:focus[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-	background-color: #c3251d;
+	background-color: $button-bkgd-gray;
 	color: #fff;
 }
 
@@ -347,7 +351,7 @@ input:focus[type="submit"],
 .footer-widgets input:focus[type="reset"],
 .footer-widgets input:focus[type="submit"],
 .footer-widgets .button:focus {
-	background-color: #fff;
+	background-color: $button-bkgd-gray-hover;
 	color: #333;
 }
 
@@ -387,7 +391,7 @@ td {
 
 th {
 	font-weight: 400;
-	color:$color-gray-darkest * 1.5;
+	color:$gray-med-dark;
 }
 
 /* ## Screen Reader Text
@@ -415,7 +419,7 @@ th {
 	font-size: 1em;
 	font-weight: bold;
 	padding: 15px 23px 14px;
-	color: #333;
+	color: $gray-dark;
 	background: #fff;
 	z-index: 100000; /* Above WP toolbar. */
 	text-decoration: none;

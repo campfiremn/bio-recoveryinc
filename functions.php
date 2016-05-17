@@ -11,7 +11,7 @@ define( 'CHILD_THEME_VERSION', '2.2.2' );
 add_action( 'wp_enqueue_scripts', 'bio_recovery_google_fonts' );
 function bio_recovery_google_fonts() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic,600italic', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700', array(), CHILD_THEME_VERSION );
 	
 	// Add Mobile Button Script to Header Right Widget Navigation Menu
 	wp_enqueue_script( 'header_nav_for_mobile', get_bloginfo( 'stylesheet_directory' ) . '/lib/js/header-mobile-nav.js', array('jquery'), '1.0.0' );

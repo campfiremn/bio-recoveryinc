@@ -13,7 +13,7 @@
 		padding: 0 24px;
 	}
 	a:hover {
-		background:$gray * .98;
+		background:$gray-light;
 	}
 }
 
@@ -27,7 +27,7 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-	color: $gray * .65;
+	color: $gray-med-dark;
 	text-decoration: none;
 }
 
@@ -51,13 +51,13 @@
 		position: relative;
 		width: 200px;
 		word-wrap: break-word;
-		border-left:1px solid;
-		border-right:1px solid;
-		border-bottom:1px solid;
-		border-color:$gray * .97;
+		border-left:$border-thin;
+		border-right:$border-thin;
+		border-bottom:$border-thin;
+		border-color:$border-color;
 	}
 	a:hover {
-		color:$gray * .65;
+		color:$gray-med-dark;
 		background-color:$gray;
 	}
 }
@@ -133,8 +133,8 @@
 --------------------------------------------- */
 
 .nav-header a {
-	color:#585863;
-	font-weight:700;
+	color:$gray-dark;
+	font-weight:$bold;
 	text-transform:uppercase;
 	font-size:14px;
 	letter-spacing:-.2px;
@@ -266,7 +266,7 @@ li.menu-title a span:active {
 	height:36px;
 	border-color:$color-primary;
 	font-weight:bold;
-	color:$color-gray-darkest;
+	color:$gray-dark;
 }
 
 .custom-search .search-form input[type="submit"] {
