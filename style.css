@@ -258,7 +258,8 @@ body {
   font-weight: 400;
   line-height: 1.6875;
   -webkit-font-smoothing: antialiased;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 a,
 button,
@@ -285,7 +286,7 @@ a:focus {
   color: #024898; }
 
 p {
-  margin: 0 0 28px;
+  margin: 0 0 27px;
   padding: 0; }
 
 ol,
@@ -350,17 +351,18 @@ h6 {
   color: #4a4a4a;
   font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
   font-weight: 700;
+  margin: 0;
   line-height: 1.2;
-  margin: 0 0 10px; }
+  margin-bottom: 10px; }
 
 h1 {
-  font-size: 40px;
-  font-size: 4rem; }
+  font-size: 42px;
+  font-size: 4.2rem; }
 
 h2 {
   font-size: 26px;
   font-size: 2.6rem;
-  line-height: 1.38462; }
+  line-height: 1.625; }
 
 h3 {
   font-size: 18px;
@@ -1630,7 +1632,7 @@ li.comment {
       color: #16b65d; }
   .woocommerce .woocommerce-message:before {
     color: #14a655;
-    font-weight: bold; }
+    font-weight: 700; }
   .woocommerce .woocommerce-info {
     border-top-color: #023e82; }
     .woocommerce .woocommerce-info a {
@@ -1639,30 +1641,30 @@ li.comment {
       color: #0350a8; }
   .woocommerce .woocommerce-info:before {
     color: #023e82;
-    font-weight: bold; }
+    font-weight: 700; }
   .woocommerce .woocommerce-error {
-    border-top-color: #ff3f49; }
+    border-top-color: #d6343c; }
     .woocommerce .woocommerce-error a {
       color: #ee3a43; }
     .woocommerce .woocommerce-error a:hover {
-      color: #ff3f49; }
+      color: #d6343c; }
   .woocommerce .woocommerce-error:before {
-    color: #ff3f49;
-    font-weight: bold; }
+    color: #ee3a43;
+    font-weight: 700; }
 
 .cart_item a,
 .cart_totals a {
-  color: #023672;
-  font-weight: bold; }
+  color: #035bbf;
+  font-weight: 700; }
 .cart_item a:hover,
 .cart_totals a:hover {
-  color: #034999; }
+  color: #024898; }
 
 .woocommerce a.remove {
-  color: #636363 !important; }
+  color: #7c7c7c; }
 
 .woocommerce a.remove:hover {
-  background: #636363 !important;
+  background: #7c7c7c !important;
   color: fff; }
 
 .woocommerce .widget_shopping_cart .cart_list li a.remove,
@@ -1731,7 +1733,7 @@ li.comment {
   color: #fff;
   background-color: #14a655; }
 .woocommerce-message a.button:hover {
-  background-color: #15ae59; }
+  background-color: #12954c; }
 
 .woocommerce button.button.alt,
 .woocommerce input.button,
@@ -1752,11 +1754,11 @@ li.comment {
   color: #fff; }
 
 .woocommerce a.added_to_cart {
-  font-weight: bold;
+  font-weight: 700;
   color: #14a655;
   padding: 5px 10px; }
 .woocommerce a.added_to_cart:hover {
-  color: #bababa; }
+  color: #12954c; }
 
 a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   width: 100%;
@@ -1786,7 +1788,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   float: right;
   padding: 9px 0;
   width: 20%;
-  background: lightgray; }
+  background: #bababa; }
 .woocommerce-product-search input:hover[type="submit"] {
   color: #fff;
   background-color: #ececec; }
@@ -1801,7 +1803,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   font-weight: 400; }
 
 .woocommerce-ordering select.orderby {
-  color: #c4c7ca;
+  color: #bababa;
   font-weight: 400; }
 .woocommerce-ordering select.orderby:focus,
 .woocommerce-ordering select.orderby:hover {
@@ -1820,11 +1822,11 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   top: 15px;
   right: 15px; }
 .woocommerce ul.products li.product .price {
-  color: #aeaeae; }
+  color: #bababa; }
 
 span.amount {
-  font-weight: bold;
-  color: #86888a;
+  font-weight: 700;
+  color: #4a4a4a;
   font-size: 14px; }
 
 .woocommerce ul.product_list_widget {
@@ -1837,7 +1839,7 @@ span.amount {
   width: 50px; }
 
 p.woocommerce-result-count {
-  color: #707070; }
+  color: #7c7c7c; }
 
 .woocommerce .quantity .qty {
   border-radius: 3px;
@@ -1848,8 +1850,8 @@ p.woocommerce-result-count {
   height: 40px;
   width: auto;
   border-color: #ececec;
-  color: #48494a;
-  font-weight: bold; }
+  color: #4a4a4a;
+  font-weight: 700; }
 
 .woocommerce td.actions {
   background: #f9f9f9; }
@@ -1878,15 +1880,15 @@ p.woocommerce-result-count {
 
 .woocommerce div.product .stock {
   font-size: inherit;
-  font-weight: bold;
-  color: #48494a;
+  font-weight: 700;
+  color: #4a4a4a;
   text-transform: uppercase; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs:before {
   border-color: #ececec; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
-  background-color: #f4f4f4;
+  background-color: #ececec;
   border-color: #ececec; }
 .woocommerce div.product .woocommerce-tabs ul.tabs li:before,
 .woocommerce div.product .woocommerce-tabs ul.tabs li:after {
@@ -1897,11 +1899,11 @@ p.woocommerce-result-count {
   margin-bottom: 50px; }
 
 .product_meta a {
-  font-weight: bold;
-  color: #636363; }
+  font-weight: 700;
+  color: #7c7c7c; }
 
 .product_meta a:hover {
-  color: #c7c7c7; }
+  color: #bababa; }
 
 /* ===== Woo Commerce Pagination =====*/
 .woocommerce nav.woocommerce-pagination ul li {
@@ -1913,7 +1915,7 @@ p.woocommerce-result-count {
 
 .woocommerce nav.woocommerce-pagination ul li a,
 .woocommerce nav.woocommerce-pagination ul li span {
-  color: #48494a; }
+  color: #4a4a4a; }
 
 /* ===== Misc ===== */
 .woocommerce form .form-row .required {
@@ -1926,14 +1928,14 @@ p.woocommerce-result-count {
 .woocommerce form .form-row.woocommerce-validated .select2-container,
 .woocommerce form .form-row.woocommerce-validated input.input-text,
 .woocommerce form .form-row.woocommerce-validated select {
-  border-color: #c7c7c7;
-  color: #636363; }
+  border-color: #bababa;
+  color: #7c7c7c; }
 
 .woocommerce form .form-row.woocommerce-invalid .select2-container,
 .woocommerce form .form-row.woocommerce-invalid input.input-text,
 .woocommerce form .form-row.woocommerce-invalid .form-row.woocommerce-invalid select {
   border-color: #ee3a43;
-  color: #636363; }
+  color: #7c7c7c; }
 
 .woocommerce-page div.product div.thumbnails a {
   width: 15%;
@@ -1952,6 +1954,10 @@ p.woocommerce-result-count {
 .widget_products {
   border: 1px solid;
   border-color: #ececec; }
+
+.woocommerce ul.products li.product h3 {
+  font-size: 16px;
+  font-size: 1.6rem; }
 
 /* # Ninja Forms
 ---------------------------------------------------------------------------------------------------- */

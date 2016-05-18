@@ -29,6 +29,8 @@ $button-bkgd-gray:$gray-med-dark;
 $button-bkgd-gray-hover:$gray-med;
 $button-shop:$color-highlight;
 $button-shop-hover:$button-shop * .9;
+$button-shop-compliment:$color-highlight-compliment;
+$button-shop-compliment-hover:$button-shop-compliment * .9;
 
 /* ## Colors
 --------------------------------------------- */
@@ -67,8 +69,10 @@ $color-gray-lightest:#d0d4d7;
 
 
 /* Messages */
-$success:#14A655;
-$error:#EE3A43;
+$success:$color-highlight-compliment;
+$success-hover:$color-highlight-compliment * .9;
+$error:$color-secondary;
+$error-hover:$error * .9;
 
 
 /* ## Fonts

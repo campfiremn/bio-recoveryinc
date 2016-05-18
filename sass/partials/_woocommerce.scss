@@ -24,7 +24,7 @@
 	}
 	.woocommerce-message:before {
 		color:$color-highlight-compliment;
-		font-weight:bold;
+		font-weight:$bold;
 	}
 
 	/* Info */
@@ -39,22 +39,22 @@
 	}
 	.woocommerce-info:before {
 		color:$color-primary * .85;
-		font-weight:bold;
+		font-weight:$bold;
 	}
 
 	/* Error */
 	.woocommerce-error {
-		border-top-color:$color-secondary * 1.1;
+		border-top-color:$error-hover;
 		a {
-			color:$color-secondary;
+			color:$error;
 		}
 		a:hover {
-			color:$color-secondary * 1.1;
+			color:$error-hover;
 		}
 	}
 	.woocommerce-error:before {
-		color:$color-secondary * 1.1;
-		font-weight:bold;
+		color:$error;
+		font-weight:$bold;
 	}
 
 }
@@ -62,20 +62,20 @@
 .cart_totals {
 
 	a {
-		color:$color-primary * .75;
-		font-weight:bold;
+		color:$link-color;
+		font-weight:$bold;
 	}
 	a:hover{
-		color:$color-primary;
+		color:$link-color-hover;
 	}
 }
 
 .woocommerce a.remove {
-	color:$gray * .4 !important;
+	color:$gray-med-dark;
 }
 
 .woocommerce a.remove:hover {
-	background:$gray *.4 !important;
+	background:$gray-med-dark !important;
 	color:fff;
 }
 
@@ -163,10 +163,10 @@
 	a.button {
 		font-size:14px;
 		color:#fff;
-		background-color:$color-highlight-compliment;
+		background-color:$button-shop-compliment;
 	}
 	a.button:hover {
-		background-color:$color-highlight-compliment * 1.05;
+		background-color:$button-shop-compliment-hover;
 	}
 }
 
@@ -195,12 +195,12 @@
 
 .woocommerce {
 	a.added_to_cart {
-		font-weight:bold;
+		font-weight:$bold;
 		color:$success;
 		padding:5px 10px;
 	}
 	a.added_to_cart:hover {
-		color:$gray-med;
+		color:$success-hover;
 	}	
 }
 
@@ -245,11 +245,11 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 	    float:right;
 		padding:9px 0;
 		width:20%;
-		background:$gray * .85;
+		background:$gray-med;
 	}
 	input:hover[type="submit"] {
 		color:#fff;
-		background-color:$gray * .95;
+		background-color:$gray-light;
 	}
 }
 
@@ -265,7 +265,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 .woocommerce-ordering {
  	select.orderby {
-		color:$color-gray;
+		color:$gray-med;
 		font-weight:400;
 	}
 	select.orderby:focus,
@@ -292,13 +292,13 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 		right:15px;
 	}
 	.price {
-		color:$gray * .7;
+		color:$gray-med;
 	}
 }
 
 span.amount {
-	font-weight:bold;
-	color:$color-gray-dark;
+	font-weight:$bold;
+	color:$gray-dark;
 	font-size:14px;
 }
 
@@ -317,7 +317,7 @@ span.amount {
 }
 
 p.woocommerce-result-count {
-	color:$gray * .45;
+	color:$gray-med-dark;
 }
 
 
@@ -335,8 +335,8 @@ p.woocommerce-result-count {
 	height:40px;
 	width:auto;
 	border-color:$border-color;
-	color:$color-gray-darkest;
-	font-weight:bold;
+	color:$gray-dark;
+	font-weight:$bold;
 }
 
 .woocommerce td.actions {
@@ -349,7 +349,7 @@ p.woocommerce-result-count {
 }
 
 .woocommerce-checkout #payment {
-	background:$gray *.95;
+	background:$gray-light;
 	border:1px solid;
 	border-color:$border-color;
 }
@@ -373,8 +373,8 @@ p.woocommerce-result-count {
 
 .woocommerce div.product .stock {
 	font-size:inherit;
-	font-weight:bold;
-	color:$color-gray-darkest;
+	font-weight:$bold;
+	color:$gray-dark;
 	text-transform:uppercase;
 }
 
@@ -384,7 +384,7 @@ p.woocommerce-result-count {
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
 	li {
-		background-color:$gray * .98;
+		background-color:$gray-light;
 		border-color:$border-color;
 	}
 	li:before,
@@ -399,12 +399,12 @@ p.woocommerce-result-count {
 }
 
 .product_meta a {
-	font-weight:bold;
-	color:$gray * .4;	
+	font-weight:$bold;
+	color:$gray-med-dark;	
 }
 
 .product_meta a:hover {
-	color:$gray * .8;
+	color:$gray-med;
 }
 
 /* ===== Woo Commerce Pagination =====*/
@@ -421,7 +421,7 @@ p.woocommerce-result-count {
 .woocommerce nav.woocommerce-pagination {
 	ul li a, 
 	ul li span {
-		color:$color-gray-darkest;
+		color:$gray-dark;
 	}
 }
 
@@ -435,11 +435,14 @@ p.woocommerce-result-count {
 
 
 /* ===== Checkout =====*/
-.woocommerce form .form-row.woocommerce-validated .select2-container, 
-.woocommerce form .form-row.woocommerce-validated input.input-text, 
-.woocommerce form .form-row.woocommerce-validated select {
-	border-color:$gray * .8;
-	color:$gray * .4;
+.woocommerce form .form-row.woocommerce-validated { 
+	
+	.select2-container, 
+	input.input-text, 
+	select {
+		border-color:$border-color-focus;
+		color:$gray-med-dark;
+	}
 }
 
 .woocommerce form .form-row.woocommerce-invalid {
@@ -447,7 +450,7 @@ p.woocommerce-result-count {
 	input.input-text, 
 	.form-row.woocommerce-invalid select {
 		border-color:$color-secondary;
-		color:$gray * .4;
+		color:$gray-med-dark;
 	}
 }
 
@@ -470,6 +473,10 @@ p.woocommerce-result-count {
 
 .widget_products {
 	border:1px solid;
-	border-color:$gray * .95;
+	border-color:$gray-light;
 }
 
+.woocommerce ul.products li.product h3 {
+	font-size:16px;
+	font-size:1.6rem;
+}
