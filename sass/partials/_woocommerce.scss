@@ -435,6 +435,33 @@ p.woocommerce-result-count {
 
 
 /* ===== Checkout =====*/
+.checkout {
+	background: $gray;
+	padding: 1em;
+
+	.shop_table {
+		background-color:#fff;
+		border:$border-thin;
+		border-color:$border-color;
+	}
+	.methods,
+	.place-order {
+		background-color:#fff;
+		margin:0 !important;
+	}
+	.woocommerce-checkout-payment {
+		fieldset {
+			border:0;
+		}
+		input {
+			border-color:$border-color !important;
+		}
+		input:focus {
+			border-color:$border-color-focus !important;
+		}
+	}
+}
+
 .woocommerce form .form-row.woocommerce-validated { 
 	
 	.select2-container, 

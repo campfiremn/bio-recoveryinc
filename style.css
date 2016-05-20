@@ -1506,11 +1506,8 @@ li.comment {
 .content-box-gray {
   margin: 0 0 25px;
   overflow: hidden;
-  padding: 1em; }
-
-.content-box-gray {
-  background-color: #f9f9f9;
-  border: 1px solid #f1f1f1; }
+  padding: 1em;
+  background-color: #f9f9f9; }
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
@@ -1930,6 +1927,24 @@ p.woocommerce-result-count {
   color: #ee3a43; }
 
 /* ===== Checkout =====*/
+.checkout {
+  background: #f9f9f9;
+  padding: 1em; }
+  .checkout .shop_table {
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #ececec; }
+  .checkout .methods,
+  .checkout .place-order {
+    background-color: #fff;
+    margin: 0 !important; }
+  .checkout .woocommerce-checkout-payment fieldset {
+    border: 0; }
+  .checkout .woocommerce-checkout-payment input {
+    border-color: #ececec !important; }
+  .checkout .woocommerce-checkout-payment input:focus {
+    border-color: #bababa !important; }
+
 .woocommerce form .form-row.woocommerce-validated .select2-container,
 .woocommerce form .form-row.woocommerce-validated input.input-text,
 .woocommerce form .form-row.woocommerce-validated select {
