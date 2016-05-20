@@ -405,6 +405,8 @@ p.woocommerce-result-count {
 	ul {
 		border:$border-med;
 		border-color:$border-color;
+		overflow:hidden;
+		@include border-radius(3px);
 
 		li {
 		border-right:$border-thin;

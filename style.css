@@ -1136,20 +1136,17 @@ img.alignright,
     text-decoration: none;
     display: block;
     padding: 0 24px; }
-  .genesis-nav-menu a:hover {
-    background: #ececec; }
+  .genesis-nav-menu a:hover,
+  .genesis-nav-menu a:focus,
+  .genesis-nav-menu .current-menu-item > a,
+  .genesis-nav-menu .sub-menu .current-menu-item > a:hover
+  .sub-menu .current-menu-item > a:focus {
+    background: #f9f9f9;
+    color: #7c7c7c; }
 
 .genesis-nav-menu .menu-item {
   display: inline-block;
   text-align: left; }
-
-.genesis-nav-menu a:hover,
-.genesis-nav-menu a:focus,
-.genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
-.genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-  color: #7c7c7c;
-  text-decoration: none; }
 
 .genesis-nav-menu .sub-menu {
   left: -9999px;
@@ -1162,23 +1159,21 @@ img.alignright,
   width: 200px;
   z-index: 99;
   opacity: 1; }
-
-.genesis-nav-menu .sub-menu a {
-  background-color: #fff;
-  border-top: 0;
-  font-size: 14px;
-  font-size: 1.4rem;
-  padding: 20px;
-  position: relative;
-  width: 200px;
-  word-wrap: break-word;
-  border-left: 1px solid;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #ececec; }
-.genesis-nav-menu .sub-menu a:hover {
-  color: #7c7c7c;
-  background-color: #f9f9f9; }
+  .genesis-nav-menu .sub-menu a {
+    background-color: #fff;
+    border-top: 0;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+    word-wrap: break-word;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #ececec; }
+  .genesis-nav-menu .sub-menu a:hover {
+    background-color: #fff; }
 
 .genesis-nav-menu .sub-menu .sub-menu {
   margin: -55px 0 0 199px; }
@@ -1919,7 +1914,13 @@ p.woocommerce-result-count {
 /* ===== Woo Commerce Pagination =====*/
 .woocommerce nav.woocommerce-pagination ul {
   border: 2px solid;
-  border-color: #ececec; }
+  border-color: #ececec;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
   .woocommerce nav.woocommerce-pagination ul li {
     border-right: 1px solid;
     border-color: #ececec; }
