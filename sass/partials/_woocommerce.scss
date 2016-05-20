@@ -91,10 +91,6 @@
 	padding-top:14px;
 }
 
-.widget_shopping_cart ul.cart_list.product_list_widget {
-    margin-bottom: 25px;
-}
-
 .woocommerce .quantity .qty {
 	width:4.2em;
 }
@@ -296,17 +292,20 @@ span.amount {
 }
 
 
-
+.widget_products ul.product_list_widget {
+	padding:15px;
+}
 
 .woocommerce ul.product_list_widget {
 	max-width: 500px;
 	margin:0 auto;
-	padding:15px;
 }
 
 .woocommerce ul.product_list_widget li img, 
 .woocommerce-cart table.cart img {
 	width:50px;
+	border:$border-thin;
+	border-color:$border-color;
 }
 
 p.woocommerce-result-count {
