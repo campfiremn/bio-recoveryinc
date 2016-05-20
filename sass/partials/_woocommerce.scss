@@ -71,7 +71,7 @@
 }
 
 .woocommerce a.remove {
-	color:$gray-med-dark;
+	color:$gray-med-dark !important;
 }
 
 .woocommerce a.remove:hover {
@@ -93,13 +93,6 @@
 
 .widget_shopping_cart ul.cart_list.product_list_widget {
     margin-bottom: 25px;
-}
-
-.sidebar .woocommerce  { 
-	.widget_shopping_cart_content,
-	p.total {
-		margin-bottom:15px;
-	}
 }
 
 .woocommerce .quantity .qty {
@@ -306,9 +299,9 @@ span.amount {
 
 
 .woocommerce ul.product_list_widget {
-	padding:10px 15px;
 	max-width: 500px;
 	margin:0 auto;
+	padding:15px;
 }
 
 .woocommerce ul.product_list_widget li img, 

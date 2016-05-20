@@ -43,15 +43,20 @@
 .sidebar {
 
 	.widget_shopping_cart {
+		overflow:hidden;
+		border:$border-med;
+		border-color:$gray-med-dark;
+		@include border-radius(3px);
 
 		.widget-title {
-			background:$color-highlight-compliment;
+			background:$gray-med-dark;
 			color:#fff;
 		}
-
-		ul {
-			border-color:$color-highlight-compliment;
-		}
+	}
+	.woocommerce .widget_shopping_cart_content {
+		padding:15px;
+		background-color:$gray;
+		margin-bottom:0;
 	}
 }
 
