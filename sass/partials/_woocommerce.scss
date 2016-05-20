@@ -529,3 +529,9 @@ p.woocommerce-result-count {
 	font-size:16px;
 	font-size:1.6rem;
 }
+
+/* ===== Shop Table =====*/
+.woocommerce table.shop_table {
+	border:$border-thin;
+	border-color:$border-color;
+}
