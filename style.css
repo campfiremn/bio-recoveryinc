@@ -1595,6 +1595,8 @@ li.comment {
   .footer-widgets #woocommerce-product-search-field {
     color: #bababa;
     font-weight: 700; }
+  .footer-widgets #woocommerce-product-search-field:focus {
+    color: #7c7c7c; }
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */

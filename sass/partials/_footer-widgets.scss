@@ -66,5 +66,8 @@
 		color:$gray-med;
 		font-weight: $bold;
 	}
+	#woocommerce-product-search-field:focus {
+		color:$gray-med-dark;
+	}
 }
 
