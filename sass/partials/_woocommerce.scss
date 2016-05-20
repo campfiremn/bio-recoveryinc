@@ -400,22 +400,43 @@ p.woocommerce-result-count {
 }
 
 /* ===== Woo Commerce Pagination =====*/
-.woocommerce nav.woocommerce-pagination ul li {
-	border-color:$border-color;
+.woocommerce nav.woocommerce-pagination {
 
-	a:focus,
-	a:hover,
-	span.current {
-		background:$gray;
+	ul {
+		border:$border-med;
+		border-color:$border-color;
+
+		li {
+		border-right:$border-thin;
+		border-color:$border-color;
+
+			a {
+				font-weight:$bold;
+				color:$gray-med-dark;
+			}
+			a:focus,
+			a:hover,
+			span.current {
+				background:$gray;
+				color:$gray-med;
+				font-weight:$bold;
+			}
+		}
+		li:last-child {
+			border:none;
+		}
+
 	}
 }
 
 .woocommerce nav.woocommerce-pagination {
 	ul li a, 
 	ul li span {
-		color:$gray-dark;
+
 	}
 }
+
+.woocommerce nav.woocommerce-pagination ul
 
 /* ===== Misc ===== */
 .woocommerce form .form-row .required {

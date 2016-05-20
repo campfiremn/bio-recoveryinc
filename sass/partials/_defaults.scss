@@ -140,9 +140,6 @@ h6 {
 	color: $heading-font-color;
 	font-family: $heading-font-family;
 	font-weight: $bold;
-	margin:0;
-	line-height:1.2;
-	margin-bottom:10px;
 }
 
 h1 {
@@ -160,6 +157,7 @@ h3 {
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.5;
+	margin-top:28px;
 }
 
 h4 {
