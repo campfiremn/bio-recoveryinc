@@ -271,11 +271,12 @@ textarea {
 	font-weight:$bold;
 	padding: 16px;
 	width: 100%;
+	@include border-radius(3px);
 }
 
 input:focus,
 textarea:focus {
-	border-top: $border-med;
+	border: $border-med;
 	border-color: $border-color-focus;
 	outline: none;
 }

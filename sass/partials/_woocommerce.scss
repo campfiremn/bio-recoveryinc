@@ -440,9 +440,16 @@ p.woocommerce-result-count {
 	.select2-container, 
 	input.input-text, 
 	select {
-		border-color:$border-color-focus;
+		border-color:$border-color;
 		color:$gray-med-dark;
 	}
+	.select2-container:focus, 
+	input.input-text:focus, 
+	select:focus {
+		border-color:$border-color-focus;
+		color:$gray-dark;
+	}
+
 }
 
 .woocommerce form .form-row.woocommerce-invalid {
@@ -450,7 +457,7 @@ p.woocommerce-result-count {
 	input.input-text, 
 	.form-row.woocommerce-invalid select {
 		border-color:$color-secondary;
-		color:$gray-med-dark;
+		color:$gray-dark;
 	}
 }
 

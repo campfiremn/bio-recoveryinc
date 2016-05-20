@@ -456,11 +456,16 @@ textarea {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 16px;
-  width: 100%; }
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
 
 input:focus,
 textarea:focus {
-  border-top: 2px solid;
+  border: 2px solid;
   border-color: #bababa;
   outline: none; }
 
@@ -1928,14 +1933,19 @@ p.woocommerce-result-count {
 .woocommerce form .form-row.woocommerce-validated .select2-container,
 .woocommerce form .form-row.woocommerce-validated input.input-text,
 .woocommerce form .form-row.woocommerce-validated select {
-  border-color: #bababa;
+  border-color: #ececec;
   color: #7c7c7c; }
+.woocommerce form .form-row.woocommerce-validated .select2-container:focus,
+.woocommerce form .form-row.woocommerce-validated input.input-text:focus,
+.woocommerce form .form-row.woocommerce-validated select:focus {
+  border-color: #bababa;
+  color: #4a4a4a; }
 
 .woocommerce form .form-row.woocommerce-invalid .select2-container,
 .woocommerce form .form-row.woocommerce-invalid input.input-text,
 .woocommerce form .form-row.woocommerce-invalid .form-row.woocommerce-invalid select {
   border-color: #ee3a43;
-  color: #7c7c7c; }
+  color: #4a4a4a; }
 
 .woocommerce-page div.product div.thumbnails a {
   width: 15%;
