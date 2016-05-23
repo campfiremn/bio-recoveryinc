@@ -2244,6 +2244,10 @@ p.woocommerce-result-count {
 @media only screen and (max-width: 550px) {
   .woocommerce input.button {
     width: 100% !important; }
+  .woocommerce ul.products li.product,
+  .woocommerce .woocommerce-page ul.products li.product {
+    width: 100%;
+    float: none; }
 
   .woocommerce-cart table.cart td.actions .coupon .input-text {
     margin-bottom: 10px;
