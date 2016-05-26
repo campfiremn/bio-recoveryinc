@@ -685,6 +685,21 @@ th {
 .content-sidebar-sidebar .sidebar-secondary {
   float: right; }
 
+/* ### Single Product Page ### */
+.single .content {
+  width: 100%; }
+.single .sidebar-primary {
+  float: none;
+  width: 100%;
+  clear: both;
+  display: block; }
+  .single .sidebar-primary .widget {
+    max-width: 300px;
+    vertical-align: top;
+    display: inline-block; }
+  .single .sidebar-primary .widget_simpleimage {
+    margin: 0 15px; }
+
 /* ## Column Classes
 --------------------------------------------- */
 /* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
@@ -1019,8 +1034,36 @@ img.alignright,
     margin: 0;
     font-size: 14px; }
 
-/* ## Tag Cloud
+/* ## Menu Cart
 --------------------------------------------- */
+.single .widget_shopping_cart {
+  overflow: hidden;
+  border: 2px solid;
+  border-color: #ececec;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px; }
+  .single .widget_shopping_cart a {
+    color: #011d3c; }
+  .single .widget_shopping_cart p.buttons {
+    margin: 0; }
+  .single .widget_shopping_cart span.amount {
+    font-size: 12px !important;
+    font-size: 1.2rem !important; }
+  .single .widget_shopping_cart .widget-title {
+    background: #f9f9f9;
+    margin: 0;
+    padding: 15px 15px 0; }
+  .single .widget_shopping_cart ul {
+    padding-bottom: 15px; }
+.single .widget_shopping_cart_content {
+  padding: 0 15px 15px;
+  background-color: #f9f9f9;
+  margin-bottom: 0; }
+
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
 /* ## Genesis eNews Extended
@@ -1775,7 +1818,8 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-bottom: 40px; }
   .woocommerce div.product p.price {
     font-size: inherit; }
 

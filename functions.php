@@ -198,4 +198,19 @@ add_action( 'woocommerce_before_single_product_summary', 'woocommerce_template_s
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_single_meta' );
 
+//* Register after post widget area
+genesis_register_sidebar( array(
+	'id'            => 'after-product',
+	'name'          => __( 'After Product', 'themename' ),
+	'description'   => __( 'This is a widget area that can be placed after a product', 'themename' ),
+) );
+
+//* Hook after post widget area after post content
+add_action( 'woocommerce_single_product_summary', 'mm_after_product_widget', 100);
+	function mm_after_product_widget() {
+		genesis_widget_area( 'after-product', array(
+			'before' => '<div class="after-product widget-area">',
+			'after' => '</div>',
+	) );
+}
 

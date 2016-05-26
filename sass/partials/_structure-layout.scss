@@ -47,6 +47,7 @@
 	width: 860px;
 }
 
+
 .content-sidebar .content,
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content {
@@ -84,6 +85,28 @@
 
 .content-sidebar-sidebar .sidebar-secondary {
 	float: right;
+}
+
+/* ### Single Product Page ### */
+
+.single {
+	.content {
+		width:100%;
+	}
+	.sidebar-primary {
+		float:none;
+		width:100%;
+		clear:both;display:block;
+		
+		.widget {
+			max-width:300px;
+			vertical-align: top;
+			display:inline-block;
+		}
+		.widget_simpleimage {
+			margin:0 15px;
+		}
+	}
 }
 
 /* ## Column Classes
