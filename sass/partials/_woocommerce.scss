@@ -200,18 +200,22 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 
 /* ===== Product ===== */
-.woocommerce div.product .product_title {
-	font-size:36px;
-	font-size:3.6rem;
+.woocommerce div.product {
+	border:$border-thin;
+	border-color:$border-color;
+	padding:15px;
+	@include border-radius(3px);
+
+	p.price {
+		font-size:inherit;
+	}
 }
 
 .woocommerce ul.products li.product h3 {
 	padding:0;	
 }
 
-.woocommerce div.product p.price {
-	font-size:inherit;
-}
+
 
 .woocommerce {
 	ul.products li.product a img, 
@@ -290,8 +294,8 @@ span.amount {
 	font-size:14px;
 }
 
-.single span.amount {
-	font-size:20px;
+.single .content .summary span.amount {
+	font-size:24px;
 }
 
 

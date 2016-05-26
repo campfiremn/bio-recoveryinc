@@ -189,3 +189,13 @@ add_filter('widget_text', 'do_shortcode');
 // Move WooCommerce price
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );
+
+// Move Product Title Above Thumbnail
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+add_action( 'woocommerce_before_single_product_summary', 'woocommerce_template_single_title', 5 );
+
+// Move Product Meta Description
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_single_meta' );
+
+
