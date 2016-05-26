@@ -201,15 +201,15 @@
 /* ## Single Product Free Shipping CTA
 --------------------------------------------- */
 .summary .cta-free-shipping {
-	background-color:$color-yellow;
-	color:$gray * .4;
-	padding:25px;
+	background-color:$color-primary-dark;
+	color:#fff;
+	padding:15px;
 	font-weight:bold;
 	margin-top:25px;
 
 	p {
 		margin:0;
-		font-size:24px;
+		font-size:14px;
 	}
 }
 

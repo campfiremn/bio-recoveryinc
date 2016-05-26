@@ -203,7 +203,6 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 .woocommerce div.product .product_title {
 	font-size:36px;
 	font-size:3.6rem;
-	margin:0;	
 }
 
 .woocommerce ul.products li.product h3 {
@@ -289,6 +288,10 @@ span.amount {
 	font-weight:$bold;
 	color:$gray-dark;
 	font-size:14px;
+}
+
+.single span.amount {
+	font-size:20px;
 }
 
 
@@ -503,10 +506,7 @@ p.woocommerce-result-count {
 	}
 }
 
-.woocommerce-page div.product div.thumbnails a {
-	width:15%;
-	margin-right:1%;
-}
+
 
 .sidebar .woocommerce ul.products li.product {
 	width: 100%;

@@ -298,11 +298,10 @@ li {
   list-style-type: none; }
 
 .product {
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 18px;
+  font-size: 1.8rem; }
   .product p {
-    line-height: 1.45;
-    margin-bottom: 15px; }
+    line-height: 1.45; }
   .product ul {
     padding-left: 10px;
     margin-bottom: 20px; }
@@ -354,7 +353,8 @@ h6 {
 
 h1 {
   font-size: 42px;
-  font-size: 4.2rem; }
+  font-size: 4.2rem;
+  line-height: 1.2; }
 
 h2 {
   font-size: 26px;
@@ -1010,14 +1010,14 @@ img.alignright,
 /* ## Single Product Free Shipping CTA
 --------------------------------------------- */
 .summary .cta-free-shipping {
-  background-color: #fee033;
-  color: #636363;
-  padding: 25px;
+  background-color: #02336a;
+  color: #fff;
+  padding: 15px;
   font-weight: bold;
   margin-top: 25px; }
   .summary .cta-free-shipping p {
     margin: 0;
-    font-size: 24px; }
+    font-size: 14px; }
 
 /* ## Tag Cloud
 --------------------------------------------- */
@@ -1769,8 +1769,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 /* ===== Product ===== */
 .woocommerce div.product .product_title {
   font-size: 36px;
-  font-size: 3.6rem;
-  margin: 0; }
+  font-size: 3.6rem; }
 
 .woocommerce ul.products li.product h3 {
   padding: 0; }
@@ -1830,6 +1829,9 @@ span.amount {
   font-weight: 700;
   color: #4a4a4a;
   font-size: 14px; }
+
+.single span.amount {
+  font-size: 20px; }
 
 .widget_products ul.product_list_widget {
   padding: 15px; }
@@ -1978,10 +1980,6 @@ p.woocommerce-result-count {
 .woocommerce form .form-row.woocommerce-invalid .form-row.woocommerce-invalid select {
   border-color: #ee3a43;
   color: #4a4a4a; }
-
-.woocommerce-page div.product div.thumbnails a {
-  width: 15%;
-  margin-right: 1%; }
 
 .sidebar .woocommerce ul.products li.product {
   width: 100%;

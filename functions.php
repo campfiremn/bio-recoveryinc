@@ -186,3 +186,6 @@ function woocommerce_custom_sales_price( $price, $product ) {
 //* Shortcodes in Sidebar Text Widget
 add_filter('widget_text', 'do_shortcode');
 
+// Move WooCommerce price
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );

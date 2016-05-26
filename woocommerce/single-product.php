@@ -71,7 +71,7 @@ function gencwooc_single_product_loop() {
 				
 				<div class="cta-free-shipping">
 					<p>Free Shipping on Orders of $300 or More<br>
-					<span style="font-size:.618em;">Applies to U.S. only</span></p>
+					<span style="font-weight:400;">Applies to U.S. only</span></p>
 				</div>
 			</div>
 
