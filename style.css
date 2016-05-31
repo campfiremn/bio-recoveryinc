@@ -1811,7 +1811,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 /* ===== Product ===== */
 .woocommerce div.product {
-  border: 1px solid;
+  border: 2px solid;
   border-color: #ececec;
   padding: 15px;
   -webkit-border-radius: 3px;
@@ -1821,7 +1821,14 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
   border-radius: 3px;
   margin-bottom: 40px; }
   .woocommerce div.product p.price {
-    font-size: inherit; }
+    font-size: inherit;
+    font-weight: bold; }
+
+.single ul.products-included, .single ul.ingredients {
+  padding-left: 0; }
+  .single ul.products-included li, .single ul.ingredients li {
+    display: inline-block;
+    list-style-type: none; }
 
 .woocommerce ul.products li.product h3 {
   padding: 0; }

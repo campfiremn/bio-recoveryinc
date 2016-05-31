@@ -201,7 +201,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 /* ===== Product ===== */
 .woocommerce div.product {
-	border:$border-thin;
+	border:$border-med;
 	border-color:$border-color;
 	padding:15px;
 	@include border-radius(3px);
@@ -209,6 +209,18 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 	p.price {
 		font-size:inherit;
+		font-weight:bold;
+	}
+}
+
+.single {
+	ul.products-included, ul.ingredients {
+		padding-left:0;
+
+		li {
+			display:inline-block;
+			list-style-type:none;
+		}
 	}
 }
 
