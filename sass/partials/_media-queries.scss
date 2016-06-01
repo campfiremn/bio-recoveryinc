@@ -278,6 +278,24 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+
+	.woocommerce {
+
+		div.product {
+			border:none;
+			padding:0;
+			
+			div.images {
+				width:100%;
+			}
+			div.summary {
+				width:100%;
+			}
+		}
+	}
+}
+
 @media only screen and (min-width: 800px) {
 
 	/* This makes the header nav menu normal again when the browser window expands */

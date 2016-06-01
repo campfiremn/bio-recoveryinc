@@ -203,7 +203,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 .woocommerce div.product {
 	border:$border-med;
 	border-color:$border-color;
-	padding:15px;
+	padding:25px;
 	@include border-radius(3px);
 	margin-bottom:40px;
 
@@ -231,9 +231,14 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 
 .woocommerce {
-	ul.products li.product a img, 
-	div.product div.images img {
 
+	div.product {
+		div.images {
+			width:38%;
+		}
+		div.summary {
+			width:59%;
+		}
 	}
 }
 

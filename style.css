@@ -1813,7 +1813,7 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 .woocommerce div.product {
   border: 2px solid;
   border-color: #ececec;
-  padding: 15px;
+  padding: 25px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1832,6 +1832,11 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 .woocommerce ul.products li.product h3 {
   padding: 0; }
+
+.woocommerce div.product div.images {
+  width: 38%; }
+.woocommerce div.product div.summary {
+  width: 59%; }
 
 /* ===== Custom Search ===== */
 .woocommerce-product-search input[type="submit"] {
@@ -2285,6 +2290,14 @@ p.woocommerce-result-count {
   .footer-widgets .footer-widgets-3 {
     width: 100%;
     float: none; } }
+@media only screen and (max-width: 768px) {
+  .woocommerce div.product {
+    border: none;
+    padding: 0; }
+    .woocommerce div.product div.images {
+      width: 100%; }
+    .woocommerce div.product div.summary {
+      width: 100%; } }
 @media only screen and (min-width: 800px) {
   /* This makes the header nav menu normal again when the browser window expands */
   .nav-header .genesis-nav-menu {
